@@ -1,29 +1,17 @@
-{{#
-    @name Layout
-    @desc The default layout file.
-#}}
-
-<!-- /layout.antlers.html -->
 <!doctype html>
-<html lang="{{ site:short_locale }}" class="antialiased scroll-smooth scroll-pt-4">
+<html lang="{{ site:short_locale }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        {{ vite src="resources/css/site.css|resources/js/site.js" }}
-        {{ partial:statamic-peak-seo::snippets/seo }}
-        {{ partial:statamic-peak-browser-appearance::snippets/browser_appearance }}
-        {{ partial:statamic-peak-tools::snippets/live_preview }}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title }} — {{ settings:site_name }}</title>
+        <meta name="description" content="{{ excerpt ?? title }}">
+        <meta name="theme-color" content="00908F">
+        {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
-    <body class="flex flex-col min-h-screen bg-white selection:bg-primary selection:text-white">
-        {{ stack:seo_body }}
-        {{ partial:statamic-peak-tools::snippets/noscript }}
-        {{ partial:statamic-peak-tools::navigation/skip_to_content }}
-        {{ partial:statamic-peak-tools::components/toolbar }}
-
-        {{ partial:layout/header }}
+    <body class="bg-white font-sans leading-normal text-grey-800 px-4 sm:px-10" x-data="{ showMobileNav: false }">
+        {{ partial:nav }}
         {{ template_content }}
-        {{ partial:layout/footer }}
+        {{ partial:footer }}
     </body>
 </html>
-<!-- End: /layout.antlers.html -->

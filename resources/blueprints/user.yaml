@@ -1,4 +1,3 @@
-title: User
 fields:
   -
     handle: name
@@ -26,4 +25,3 @@ fields:
     field:
       type: assets
       max_files: 1
-      container: images

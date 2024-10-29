@@ -1,88 +1,29 @@
 title: Page
-tabs:
+sections:
   main:
     display: Main
-    sections:
+    fields:
       -
-        display: General
-        fields:
-          -
-            handle: title
-            field:
-              type: text
-              required: true
-              input_type: text
-              localizable: true
-              listable: true
-              display: Title
-              validate:
-                - required
+        handle: title
+        field:
+          character_limit: 0
+          type: text
+          localizable: false
+          display: Title
       -
-        display: 'Page builder'
-        fields:
-          -
-            import: page_builder
-  seo:
-    display: SEO
-    sections:
+        handle: content
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: true
+          smartypants: false
+          type: markdown
+          localizable: false
+          display: Content
       -
-        display: Basic
-        instructions: 'Basic SEO settings.'
-        fields:
-          -
-            import: 'statamic-peak-seo::seo_basic'
-      -
-        display: Advanced
-        instructions: 'Advanced SEO settings.'
-        fields:
-          -
-            import: 'statamic-peak-seo::seo_advanced'
-      -
-        display: 'Open Graph'
-        instructions: 'Open Graph meta tags for social sharing.'
-        fields:
-          -
-            import: 'statamic-peak-seo::seo_open_graph'
-      -
-        display: Sitemap
-        instructions: 'Sitemap configuration.'
-        fields:
-          -
-            import: 'statamic-peak-seo::seo_sitemap'
-      -
-        display: 'JSON-ld Schema'
-        instructions: 'Custom JSON-ld schema objects.'
-        fields:
-          -
-            import: 'statamic-peak-seo::seo_jsonld'
-  sidebar:
-    display: Sidebar
-    sections:
-      -
-        display: Meta
-        fields:
-          -
-            handle: slug
-            field:
-              type: slug
-              localizable: true
-              generate: true
-              listable: hidden
-              display: Slug
-              validate:
-                - required
-          -
-            handle: parent
-            field:
-              type: entries
-              collections:
-                - pages
-              max_items: 1
-              listable: false
-              localizable: true
-              display: Parent
-              instructions_position: above
-              visibility: visible
-              mode: default
-              create: true
-              hide_display: false
+        handle: template
+        field:
+          type: template
+          localizable: false
+          display: Template

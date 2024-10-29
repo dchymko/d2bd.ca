@@ -1,5 +1,6 @@
 ---
 id: 059d4d8d-fc60-49f8-8823-7da10549e84e
+published: false
 blueprint: page
 title: 'Page not found'
 page_builder:
@@ -26,6 +27,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 66c6ff90-a9a2-42ba-a4e1-c0872e344786
-updated_at: 1646921434
+updated_by: 8876c01d-f2f6-491a-9beb-09e57fe188ce
+updated_at: 1730229925
 ---

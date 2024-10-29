@@ -1,0 +1,19 @@
+title: Settings
+data:
+  site_name: DarylToBeDifferent
+  social:
+    -
+      id: 2x7jsul2
+      name: Github
+      url: 'https://github.com/dchymko'
+      icon: site/social-icons/github.svg
+    -
+      id: jBrkHG19
+      name: Email
+      url: 'mailto:daryl@getoutside.ca'
+      icon: site/social-icons/email.svg
+    -
+      id: m2uuh8kb
+      name: Instagram
+      url: 'https://instagram.com/daryltobedifferent'
+      icon: site/social-icons/instagram.svg

@@ -1,8 +1,11 @@
 title: Posts
-template: posts/show
+template: articles/show
 layout: layout
+mount: b9e4bfe3-9c12-4553-b7ef-f43c22ffaa63
+taxonomies:
+  - topics
 revisions: false
-route: 'posts/{slug}'
+route: '{slug}'
 date: true
 sort_dir: asc
 date_behavior:

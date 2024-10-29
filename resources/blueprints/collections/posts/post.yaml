@@ -22,6 +22,13 @@ tabs:
               container: images
               type: assets
               display: 'Featured Image'
+          -
+            handle: topic
+            field:
+              taxonomies:
+                - topics
+              type: terms
+              display: Topic
   sidebar:
     display: Sidebar
     sections:
@@ -38,4 +45,20 @@ tabs:
             field:
               type: text
               display: 'Post Date'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: topics
+            field:
+              type: terms
+              taxonomies:
+                - topics
+              display: Topics
+              mode: select
 title: Post
