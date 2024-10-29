@@ -9,7 +9,7 @@ post_date: '2020-08-16'
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":1776,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://darylchymko.ca/wp-content/uploads/2020/08/IMG_63471-768x1024.jpeg" alt="" class="wp-image-1776" /><figcaption>One panel attached with the tape in place for the second one.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="/images/2020/08/IMG_63471-768x1024.jpeg" alt="" class="wp-image-1776" /><figcaption>One panel attached with the tape in place for the second one.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -17,7 +17,7 @@ post_date: '2020-08-16'
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":1777,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://darylchymko.ca/wp-content/uploads/2020/08/IMG_6365.resized.jpeg" alt="" class="wp-image-1777" /><figcaption>The finished install. </figcaption></figure>
+<figure class="wp-block-image size-large"><img src="/images/2020/08/IMG_6365.resized.jpeg" alt="" class="wp-image-1777" /><figcaption>The finished install. </figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -33,7 +33,7 @@ post_date: '2020-08-16'
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":1784,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="http://darylchymko.ca/wp-content/uploads/2020/08/IMG_8726-1024x768.jpeg" alt="" class="wp-image-1784" /><figcaption>Cables (and fan) painted white for extra stealthiness!</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="/images/2020/08/IMG_8726-1024x768.jpeg" alt="" class="wp-image-1784" /><figcaption>Cables (and fan) painted white for extra stealthiness!</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->

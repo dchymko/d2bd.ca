@@ -13,7 +13,7 @@ Luckily I track all of my fuel-ups in <a href="http://www.fuelly.com/">Fuelly</a
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-1061" src="http://darylchymko.ca/wp-content/uploads/2016/02/mileage-1.png" alt="mileage" width="558" height="309" />
+<img class="aligncenter size-full wp-image-1061" src="/images/2016/02/mileage-1.png" alt="mileage" width="558" height="309" />
 
 &nbsp;
 
