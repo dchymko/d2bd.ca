@@ -3,7 +3,19 @@ data:
   social_media:
     -
       id: trJdEAn4
-      handle: studio1902
+      handle: dchymko
       prefix: 'https://www.github.com/'
       type: github
+      enabled: true
+    -
+      id: m2u3w0fg
+      handle: daryltobedifferent
+      prefix: 'https://www.instagram.com/'
+      type: instagram
+      enabled: true
+    -
+      id: m2u3ween
+      handle: daryl@getoutside.ca
+      prefix: 'mailto:'
+      type: email
       enabled: true
