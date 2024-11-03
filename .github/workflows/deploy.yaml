@@ -23,16 +23,11 @@ jobs:
           submodules: recursive
       - name: Bump PHP version
         id: cache-apt
-        run: |
-         sudo add-apt-repository ppa:ondrej/php && sudo apt update &&
-         sudo apt install software-properties-common php8.3 php-curl php-xml php8.3-zip php8.3-mbstring php8.3-gd
+        run: "sudo apt install software-properties-common && sudo add-apt-repository ppa:ondrej/php && sudo apt update && sudo apt install php8.3 php-curl"
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Build VIte
+      - name: Build Vite
         run: npm run build
-      - name: Composer Update (continues on error)
-        run: "[[ -f composer.json ]] && composer update"
-        continue-on-error: true
       - name: Deploy to Cloudways server
         uses: dchymko/ssh-deploy@main
         with:
@@ -45,7 +40,11 @@ jobs:
           SCRIPT_BEFORE: |
             whoami
             ls -al
+          SCRIPT_AFTER_REQUIRED: true
           SCRIPT_AFTER: |
+            cd public_html
             whoami
             ls -al
-            echo $RSYNC_STDOUT
+            export NPM_CONFIG_CACHE=~/public_html
+            npm run build
+            composer update
