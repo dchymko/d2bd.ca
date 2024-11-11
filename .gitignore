@@ -16,7 +16,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-
+local_ssh_script*
 /.phpunit.cache
 
 /public/build/
